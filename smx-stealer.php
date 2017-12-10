@@ -1,4 +1,19 @@
 <?php 
+// Dibuat oleh GoogleX
+//
+//  __|                 |    \ \  /     
+// (_ |  _ \  _ \  _` | |  -_)>  <    
+//\___|\___/\___/\__, |_|\___|_/\_\   
+//               ____/                   
+//
+// Copyright 2017
+//                                                    [-CREDIT-]
+//
+// Credit:
+//- GoogleX
+//
+// SourceMod are SUX
+
 $uri = "https://www.sourcemod.net/compiler.php?go=dl&id=";
 $saveddir = "./sucksmod/";
 $names = "";
