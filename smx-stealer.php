@@ -15,7 +15,7 @@
 // SourceMod are SUX
 
 $uri = "https://www.sourcemod.net/compiler.php?go=dl&id=";
-$saveddir = "./sucksmod/";
+$saveddir = "sucksmod";
 $names = "";
 
 if(!file_exists($saveddir)){
@@ -61,7 +61,7 @@ while(1){
 	}else{
 		$names = ambilKata($names,'name="','"');
 		echo "\nDownloading ".$names." .....";
-		if(file_put_contents($saveddir.$names, fopen($uri.$current, 'r'))){
+		if(file_put_contents($saveddir."/".$names, fopen($uri.$current, 'r'))){
 			echo "\nDone ! file saved -> ".$names."\n==================";
 		}
 		$current++;
@@ -69,3 +69,4 @@ while(1){
 	}
 	sleep(10); //you can change the sleep time
 }
+?>
