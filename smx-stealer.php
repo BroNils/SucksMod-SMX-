@@ -63,8 +63,8 @@ while(1){
 		echo "\nDownloading ".$names." .....";
 		if(file_put_contents($saveddir."/".$names, fopen($uri.$current, 'r'))){
 			echo "\nDone ! file saved -> ".$names."\n==================";
+			$current++;
 		}
-		$current++;
 		$savedfile = file_put_contents("id.txt", $current);
 	}
 	sleep(10); //you can change the sleep time
