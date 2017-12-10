@@ -65,7 +65,7 @@ while(1){
 			echo "\nDone ! file saved -> ".$names."\n==================";
 			$current++;
 		}
-		$savedfile = file_put_contents("id.txt", $current);
+		file_put_contents("id.txt", $current);
 	}
 	sleep(10); //you can change the sleep time
 }
